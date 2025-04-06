@@ -1,16 +1,21 @@
-import Logo from "@/../public/logos.png";
-import Image from "next/image";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import {
+  Card,
+  CardContent,
+  CardHeader,
+  CardTitle,
+  CardFooter,
+} from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
+import SuperScriptLogo from "@/components/common/super-script-logo";
+import Link from "next/link";
 
 export default function Home() {
   return (
     <>
-      <div className="text-center items-baseline text-[7em] my-10 font-bold">
+      <h1 className="text-center items-baseline text-[7em] my-10 font-bold">
         ShahTech
-        <sup className="inline-block">
-          <Image src={Logo} alt="company logo" width={150} />
-        </sup>
-      </div>
+        <SuperScriptLogo width={150} />
+      </h1>
       <div className="text-[1.25em]">
         <p className="my-5">
           ShahTech Inc empowers tech companies to connect with developer
@@ -32,10 +37,10 @@ export default function Home() {
         </p>
       </div>
       <h2 className="text-[2em] font-bold my-7">Services Provided</h2>
-      <div className="flex flex-wrap gap-4">
+      <div className="flex flex-wrap gap-4 my-7">
         <Card className="flex-1 min-w-[45%]">
           <CardHeader>
-            <CardTitle>Blogs</CardTitle>
+            <CardTitle className="text-2xl">Blogs</CardTitle>
           </CardHeader>
           <CardContent>
             <p>
@@ -50,10 +55,15 @@ export default function Home() {
               through compelling, well-researched blog posts.
             </p>
           </CardContent>
+          <CardFooter>
+            <Link href="https://dev.to/busycaesar" target="_blank">
+              <Button>Our Blogs</Button>
+            </Link>
+          </CardFooter>
         </Card>
         <Card className="flex-1 min-w-[45%]">
           <CardHeader>
-            <CardTitle>Video Content</CardTitle>
+            <CardTitle className="text-2xl">Video Content</CardTitle>
           </CardHeader>
           <CardContent>
             <p>
@@ -68,10 +78,18 @@ export default function Home() {
               experiences.
             </p>
           </CardContent>
+          <CardFooter>
+            <Link
+              href="https://www.youtube.com/@busycaesar/videos"
+              target="_blank"
+            >
+              <Button>Our Videos</Button>
+            </Link>
+          </CardFooter>
         </Card>
         <Card className="flex-1 min-w-[45%]">
           <CardHeader>
-            <CardTitle>
+            <CardTitle className="text-2xl">
               Conference/Meetup/Event Presentation and Webinars
             </CardTitle>
           </CardHeader>
@@ -93,7 +111,7 @@ export default function Home() {
         </Card>
         <Card className="flex-1 min-w-[45%]">
           <CardHeader>
-            <CardTitle>Community Feedback</CardTitle>
+            <CardTitle className="text-2xl">Community Feedback</CardTitle>
           </CardHeader>
           <CardContent>
             <p>

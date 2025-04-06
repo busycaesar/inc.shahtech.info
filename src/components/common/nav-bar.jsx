@@ -29,17 +29,17 @@ export default function NavBar() {
         />
         hahTech
       </Link>
-      {/* <NavigationMenu>
+      <NavigationMenu>
         <NavigationMenuList>
           <NavigationMenuItem>
-            <Link href="#contact" legacyBehavior passHref>
+            <Link href="/our-team" legacyBehavior passHref>
               <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-                Contact
+                Our Team
               </NavigationMenuLink>
             </Link>
           </NavigationMenuItem>
         </NavigationMenuList>
-      </NavigationMenu> */}
+      </NavigationMenu>
     </div>
   );
 }
