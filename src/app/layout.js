@@ -10,6 +10,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <head>
+        <link rel="icon" href="/logo.ico" />
+      </head>
       <body>
         <NavBar />
         <div className="flex flex-col min-h-screen">
