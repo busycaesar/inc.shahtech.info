@@ -19,14 +19,9 @@ export default function NavBar() {
     <div className="flex justify-between items-center bg-black p-4">
       <Link
         href="/"
-        className="flex items-baseline text-[2em] font-bold text-white"
+        className="flex items-baseline md:text-[2em] text-[1.75em] font-bold text-white"
       >
-        <Image
-          src={Logo}
-          alt="company logo"
-          width={70}
-          className="inline-block"
-        />
+        <Image src={Logo} alt="company logo" className="inline-block w-15" />
         hahTech
       </Link>
       <NavigationMenu>

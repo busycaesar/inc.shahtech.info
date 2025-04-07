@@ -6,13 +6,12 @@ import DevProfile from "@/../public/dev-profile.jpeg";
 export default function OurTeam() {
   return (
     <>
-      <h1 className="text-center items-baseline text-[5em] my-10 font-bold">
+      <h1 className="text-center items-baseline md:text-[7em] text-[3em] my-10 font-bold">
         Our Team
-        <SuperScriptLogo />
+        <SuperScriptLogo className="md:w-30 w-15" />
       </h1>
-
       <div className="flex flex-col md:flex-row items-center md:items-start gap-6 max-w-6xl mx-auto p-6 bg-white shadow-lg rounded-xl">
-        <div className="w-200 rounded-full overflow-hidden border-3 border-black">
+        <div className="md:w-200 rounded-full overflow-hidden border-3 border-black">
           <Image
             src={DevProfile}
             alt="Dev"
