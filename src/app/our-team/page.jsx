@@ -27,8 +27,12 @@ export default function OurTeam() {
               <h2 className="text-[2em] font-bold">Dev J. Shah</h2>
               <p className="text-[1.5em] font-semibold">AI Evangelist</p>
               <div className="flex gap-2 justify-center my-3">
-                <Button className="text-xl">Blogs</Button>
-                <Button className="text-xl">Videos</Button>
+                <Link href="https://dev.to/busycaesar">
+                  <Button className="text-xl">Blogs</Button>
+                </Link>
+                <Link href="https://www.youtube.com/@busycaesar/videos">
+                  <Button className="text-xl">Videos</Button>
+                </Link>
               </div>
             </div>
           </div>
