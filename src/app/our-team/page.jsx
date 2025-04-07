@@ -15,7 +15,7 @@ export default function OurTeam() {
       </h1>
       <Card>
         <CardHeader className="text-center">
-          <div className="flex flex-col md:flex-row gap-6 items-center">
+          <div className="flex flex-col md:flex-row gap-6 md:items-start items-center">
             <div className="rounded-full overflow-hidden border-2 border-black">
               <Image
                 src={DevProfile}
@@ -27,10 +27,13 @@ export default function OurTeam() {
               <h2 className="text-[2em] font-bold">Dev J. Shah</h2>
               <p className="text-[1.5em] font-semibold">AI Evangelist</p>
               <div className="flex gap-2 justify-center my-3">
-                <Link href="https://dev.to/busycaesar">
+                <Link href="https://dev.to/busycaesar" target="_blank">
                   <Button className="text-xl">Blogs</Button>
                 </Link>
-                <Link href="https://www.youtube.com/@busycaesar/videos">
+                <Link
+                  href="https://www.youtube.com/@busycaesar/videos"
+                  target="_blank"
+                >
                   <Button className="text-xl">Videos</Button>
                 </Link>
               </div>
